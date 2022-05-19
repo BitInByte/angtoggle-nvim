@@ -14,7 +14,7 @@ local function action_handler(option)
     func()
   else
     -- echohl Error
-    print("This argument (" .. args .. ") is not a valid argument!")
+    print("This argument (" .. option .. ") is not a valid argument!")
     return
   end
 end
