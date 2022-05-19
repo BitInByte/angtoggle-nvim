@@ -10,5 +10,6 @@ local function check_css_file(file_name, extension)
 end
 
 return {
-  retrieve_file_info = retrieve_file_info
+  retrieve_file_info = retrieve_file_info,
+  check_css_file = check_css_file
 }
