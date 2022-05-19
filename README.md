@@ -1,6 +1,9 @@
 # angtoggle-nvim
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> d4a4aae (updated readme with some information)
 
 ## Install
 
@@ -13,6 +16,7 @@
 ## Requirements
 
 - Neovim 0.4
+<<<<<<< HEAD
 
 ## Example Keymapings
 ```lua
@@ -25,3 +29,5 @@
 | `swap_html` | Swap to html file. |
 | `swap_ts` | Swap to typescript file. |
 
+=======
+>>>>>>> d4a4aae (updated readme with some information)
