@@ -2,23 +2,25 @@ local function toggle()
   print("About to toggle")
 end
 
-local function load_command(args)
-  print(args)
+-- creating table to act as a switch
+local func_table = {
+  toggle = toggle
+}
 
-  -- creating table to act as a switch
-  local func_table = {
-    toggle = toggle
-  }
-
-  local func = func_table[args]
+local function action_handler(option)
+  local func = func_table[option]
 
   if (func) then
     func()
   else
     -- echohl Error
-    print("Sorry this plugin only works with versions of neovim that support lua")
+    print("This argument (" .. args .. ") is not a valid argument!")
     return
   end
+end
+
+local function load_command(args)
+  action_handler(args)
 end
 
 return {
