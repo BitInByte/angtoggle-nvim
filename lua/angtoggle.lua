@@ -1,7 +1,15 @@
 local function toggle()
   local file_name = vim.fn.expand("%:t:r")
   local extension = vim.fn.expand("%:e")
-  print(file_name .. " " .. extension)
+  local toggled_extension = "html"
+
+  if extension == "html" then
+    toggled_extension = "ts"
+  end
+
+  print(file_name .. " " .. toggled_extension)
+
+  vim.api.nvim_command(":e %:p:h/" .. file_name .. "." .. toggled_extension)
 end
 
 -- creating table to act as a switch
