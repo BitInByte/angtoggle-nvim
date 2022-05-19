@@ -7,7 +7,7 @@ end
 
 local function check_css_file(file_name, extension)
   local is_selected_css = vim.fn.empty(vim.fn.glob("%:p:h/" .. file_name .. "." .. extension))
-  print(extension .. " " .. is_selected_css)
+  -- print(extension .. " " .. is_selected_css)
   return is_selected_css
 end
 

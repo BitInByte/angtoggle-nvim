@@ -20,6 +20,10 @@ local function swap_ts()
   command_utils.execute_swap_command(file_name, "ts")
 end
 
+local function swap_html()
+  command_utils.execute_swap_command(file_name, "html")
+end
+
 local function swap_css()
   local final_extension = ""
   if path_utils.check_css_file(file_name, "css") == 0 then
@@ -39,7 +43,8 @@ end
 local func_table = {
   toggle = toggle,
   swap_ts = swap_ts,
-  swap_css = swap_css
+  swap_css = swap_css,
+  swap_html = swap_html
 }
 
 local function action_handler(option)
