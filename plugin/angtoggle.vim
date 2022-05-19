@@ -11,4 +11,4 @@ command! Angtoggle lua require'angtoggle'.load_command()
 let &cpo = s:save_cpo " and restore after
 unlet s:save_cpo
 
-let g:loaded_whid = 1
+let g:loaded_angtoggle = 1
