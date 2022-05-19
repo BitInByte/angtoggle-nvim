@@ -7,6 +7,7 @@ local function toggle()
   local toggled_extension = "html"
 
   if extension == "html" then
+    print("html")
     toggled_extension = "ts"
   end
 
