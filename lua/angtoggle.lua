@@ -22,13 +22,13 @@ end
 
 local function swap_css()
   local final_extension = ""
-  if not path_utils.check_css_file(file_name, "css") then
+  if path_utils.check_css_file(file_name, "css") then
     final_extension = "css"
-  elseif not path_utils.check_css_file(file_name, "scss") then
+  elseif path_utils.check_css_file(file_name, "scss") then
     final_extension = "scss"
-  elseif not path_utils.check_css_file(file_name, "sass") then
+  elseif path_utils.check_css_file(file_name, "sass") then
     final_extension = "sass"
-  elseif not path_utils.check_css_file(file_name, "less") then
+  elseif path_utils.check_css_file(file_name, "less") then
     final_extension = "less"
   end
 
