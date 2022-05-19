@@ -1,6 +1,7 @@
 local function toggle()
-  local path = vim.fn.expand("%")
-  print(path)
+  local file_name = vim.fn.expand("%:t:r")
+  local extension = vim.fn.expand("%:e")
+  print(file_name .. " " .. extension)
 end
 
 -- creating table to act as a switch
