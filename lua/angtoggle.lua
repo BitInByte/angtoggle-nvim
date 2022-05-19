@@ -6,6 +6,7 @@ local file_name, extension = path_utils.retrieve_file_info()
 local function toggle()
   local toggled_extension = "html"
 
+  print(extension)
   if extension == "html" then
     print("html")
     toggled_extension = "ts"
