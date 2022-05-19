@@ -1,5 +1,6 @@
 local function toggle()
-  print(vim.fn.expand("%"))
+  local path = vim.fn.expand("%")
+  print(path)
 end
 
 -- creating table to act as a switch
