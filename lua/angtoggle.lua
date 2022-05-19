@@ -4,6 +4,7 @@ local command_utils = require("utils.command_utils")
 local file_name, extension = path_utils.retrieve_file_info()
 
 local function toggle()
+  file_name, extension = path_utils.retrieve_file_info()
   local toggled_extension = "html"
 
   print(extension)
