@@ -1,5 +1,5 @@
 local function load_command(args)
-  print(args)
+  print(args[1])
 end
 
 return {
