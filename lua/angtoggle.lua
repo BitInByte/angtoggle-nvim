@@ -1,5 +1,5 @@
 local function toggle()
-  print("About to toggle")
+  print(vim.fn.expand())
 end
 
 -- creating table to act as a switch
