@@ -21,18 +21,18 @@ local function swap_ts()
 end
 
 local function swap_css()
-    local final_extension = ""
-    if !path_utils.check_css_file(file_name, 'css') then
-        final_extension = "css"
-        elseif !path_utils.check_css_file(file_name, 'scss') then
-        final_extension = "scss"
-        elseif !path_utils.check_css_file(file_name, 'sass') then
-        final_extension = "sass"
-        elseif !path_utils.check_css_file(file_name, 'less') then
-        final_extension = "less"
-    end
+  local final_extension = ""
+  if not path_utils.check_css_file(file_name, "css") then
+    final_extension = "css"
+  elseif not path_utils.check_css_file(file_name, "scss") then
+    final_extension = "scss"
+  elseif not path_utils.check_css_file(file_name, "sass") then
+    final_extension = "sass"
+  elseif not path_utils.check_css_file(file_name, "less") then
+    final_extension = "less"
+  end
 
-    command_utils.execute_swap_command(file_name, final_extension)
+  command_utils.execute_swap_command(file_name, final_extension)
 end
 
 -- creating table to act as a switch
