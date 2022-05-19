@@ -1,6 +1,4 @@
-" if exists('g:loaded_angtoggle') 
-"     finish 
-" endif " prevent loading file twice
+if exists('g:loaded_angtoggle') | finish | endif " prevent loading file twice
 
 let s:save_cpo = &cpo " save user coptions
 set cpo&vim " reset them to defaults
