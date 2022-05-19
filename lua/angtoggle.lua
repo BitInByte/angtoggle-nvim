@@ -1,6 +1,7 @@
+local path_utils = require "path_utils"
+
 local function toggle()
-  local file_name = vim.fn.expand("%:t:r")
-  local extension = vim.fn.expand("%:e")
+  local file_name, extension = path_utils.retrieve_file_info()
   local toggled_extension = "html"
 
   if extension == "html" then
