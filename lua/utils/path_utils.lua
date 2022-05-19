@@ -6,7 +6,7 @@ local function retrieve_file_info()
 end
 
 local function check_css_file(file_name, extension)
-  return vim.fn.empty(vim.fn.glob("%p:h/" .. file_name .. "." .. extension))
+  return vim.fn.empty(vim.fn.glob("%:p:h/" .. file_name .. "." .. extension))
 end
 
 return {
