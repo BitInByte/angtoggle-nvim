@@ -72,7 +72,7 @@ local function test_toggle()
   file_name, extension = path_utils.retrieve_file_info()
   local is_test = false
 
-  for w in file_name.gmatch("([^.]+)") do
+  for w in string.gmatch(file_name, "([^.]+)") do
     if w == "spec" then
       is_test = true
     elseif w == "test" then
@@ -94,6 +94,7 @@ local func_table = {
   swap_css = swap_css,
   swap_html = swap_html,
   swap_test = swap_test,
+  swap_file = swap_file,
   test_toggle = test_toggle
 }
 
